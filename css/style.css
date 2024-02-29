@@ -1,0 +1,231 @@
+{}
+
+@font-face {
+    font-family: CooperFont;
+    src: url(../fonts/Cooper-ExtraBoldItalic.ttf);
+}
+
+body {
+    background-color: #a2b7de;
+    cursor: url("/images/heart_icon.png"), auto;
+}
+
+header {
+    height: 98vh;
+    margin-top: 1vh;
+    text-align: center;
+    background-color: #fcfae9;
+    border-radius: 25px;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: #fcfae9;
+}
+
+
+h1 {
+    font-family: 'CooperFont';
+    font-size: 16vw;
+    line-height: 25vh;
+    padding-top: 35vh;
+    color: #a2b7de;
+}
+
+h2 {
+    font-family: "input-mono-narrow", monospace;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 0px;
+    text-align: left;
+    padding-left: 5px;
+    object-fit: contain;
+}
+
+h3 {
+    font-family: "input-mono-condensed", monospace;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: #000000 underline;
+    line-height: 10px;
+    text-align: left;
+    padding-left: 5px;
+    object-fit: contain;
+}
+
+h4 {
+    font-family: "input-mono-narrow", monospace;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 0px;
+    text-align: left;
+    padding-left: 10%;
+    object-fit: contain;
+}
+
+p {
+    font-family: "input-mono-narrow", monospace;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    object-fit: contain;
+    line-height: 35px;
+    max-width: 65ch;
+}
+
+.underline{
+    border-bottom: 2px #000000 dashed;
+    margin-top: 1px;
+}
+
+#ham {
+    min-width: 50px;
+    min-height: 30px;
+    height: 5vh;
+    width: 10vh;
+    background-color: #ef7c7c;
+    position: fixed;
+    top: 2vh;
+    right: 2vh;
+    border: 2px dashed #000000;
+    box-shadow: 4px 4px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 98vw;
+    height: 98vh;
+    background-color: #ef7c7c;
+    z-index: 1;
+    border-radius: 25px;
+}
+
+#overlay ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#overlay ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+#overlay ul li a {
+    text-decoration: none;
+    font-family: 'CooperFont';
+    font-size: 8vw;
+    line-height: 14vh;
+    color: #fcfae9;
+}
+
+#overlay ul li a:hover {
+    text-decoration: underline;
+}
+
+#close img{
+    position: fixed;
+    top: 2vh;
+    right: 2vh;
+    width: 3%;
+    cursor: pointer;
+    transform: translateY(-38%);
+}
+
+#blurb{
+    height:fit-content;
+    display: grid;
+    margin-top: 2vh;
+    padding: 5vh;    
+    grid-template-columns: 45% 55%;
+    align-self: center;
+    background-color: #fcfae9;
+    border-radius: 25px;
+}
+
+
+#scroll-container {
+    overflow-x: auto; 
+    width: 100%; 
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+#scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+#outline {
+    display: flex;
+    gap: 10px; 
+    padding: 10px;
+    width: fit-content;
+}
+
+#outline > div {
+    flex: 0 0 auto; 
+    height: 64vh;
+    width: 20vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 1vh;
+    background-color: #fcfae9;
+    cursor: pointer;
+    position: relative; 
+    border: 2px solid black;
+    box-shadow: 6px 6px;
+    border-radius: 25px;
+    padding-left: 8px;
+    transition: all 0.2s ease; 
+}
+
+#outline > div:hover {
+    transform: scale(1.05);
+    background-color: #ef7c7c;
+    z-index: 1; 
+}
+
+#outline > div:hover ~ div {
+    transform: translateX(30px); 
+}
+
+img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    padding-left: 5px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+#bottom {
+    height: 5vh;
+    margin: 2vh;
+    padding-bottom: 2vh;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 2px;
+    border-top: 2px dashed #000000;
+}
+
+#footer {
+    
+}
